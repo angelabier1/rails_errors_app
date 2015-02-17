@@ -1,0 +1,6 @@
+<% form_for @error, :html => { :multipart => true } do |f| %>
+    <%= f.text_field :message %>
+    <%= f.text_field :fix %>
+    <%= f.file_field :photo %>
+    ...
+<% end %>

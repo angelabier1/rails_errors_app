@@ -1,0 +1,13 @@
+
+<%= render 'form' %>
+<% @errors.each_slice(3) do |errors|  %>
+   <div class="row">
+                <% errors.each do |error| %>
+             <div class="col-md-4"  >
+                <%= image_tag error.photo.url(:medium) %>
+             </div>
+    <% end %>
+
+    </div>
+
+      <% end %>
